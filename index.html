@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+	<title>Crowdlinker Test</title>
+</head>
+
+<body>
+
+	<div class="header">
+		<div class="alert alert-danger" hidden="hidden" id="failureInfo">An error occurred while submitting your request. Please try again later.</div>
+		<legend>Signup for our Newsletter</legend>
+		<div class="alert alert-success" hidden="hidden" id="successInfo"><strong>Thank You!</strong> You are signed up for our newsletter</div>
+	</div>
+
+	<div class="form-container">
+
+		<form action="" class="form-horizontal" id="signupForm">
+
+		 	<div class="form-group">
+				<label for="firstname" class="col-xs-3 control-label">First Name</label>
+				<div class="col-xs-9">
+					<div class="input-group">
+			      <span class="input-group-addon transparent"><span class="glyphicon glyphicon-user"></span></span>    
+			   		<input type="text" class="form-control col-md-8" id="firstname"  placeholder="First Name" name="firstname">
+		   		</div>	
+		 		</div>	 
+		 	</div>
+
+			<div class="form-group">
+				<label for="lastname" class="col-xs-3 control-label">Last Name</label>
+				<div class="col-xs-9">
+	        <div class="input-group">
+						<span class="input-group-addon transparent"><span class="glyphicon glyphicon-user"></span></span>    
+	        	<input type="text" class="form-control col-md-8" id="lastname" placeholder="Last Name" name="lastname">
+		   		</div>
+			 	</div>  
+			</div>
+
+	  	<div class="form-group">
+	   		<label for="email" class="col-xs-3 control-label">E-Mail</label>
+	  		<div class="col-xs-9">
+	      	<div class="input-group">
+	      	 	<span class="input-group-addon transparent"><span class="glyphicon glyphicon-envelope"></span></span>   
+	      		<input type="email" class="form-control col-md-8" id="email" placeholder="E-Mail Address" name="email">
+	  			</div>
+		 		</div> 
+			</div>
+
+	    <div class="form-group">
+		    <div class="col-xs-offset-3 col-xs-9">
+		      <button type="" class="btn btn-warning btn-active" id="submitBtn">Signup <i class="glyphicon glyphicon-send"></i></button>      
+		    </div>
+	  	</div>
+		</form>
+	  
+	</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-validator/0.5.3/js/bootstrapValidator.min.js"></script>
+	<script src="js/app.js"></script>
+
+</body>
+</html>
